@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+  --color-brand-950: var(--brand-950);
+
+  /* Tokens de respiro em Branco Nítido (alteráveis por preset) */
+  --color-pearl-bg: var(--pearl-bg);
+  --color-pearl-ink: var(--pearl-ink);
+  --color-pearl-border: var(--pearl-border);
+  --color-pearl-soft: var(--pearl-soft);
+  --color-pearl-text: var(--pearl-text);
+  --color-fab-bg: var(--fab-bg);
+  --color-fab-ink: var(--fab-ink);
+  --color-fab-ring: var(--fab-ring);
+}
+
+@layer base {
+  /* Tema permanente: Carmim + Obsidiana + Branco Nítido */
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    --app-bg: #090A0F;
+    --app-bg-deep: #050609;
+    --color-slate-950: #050609;
+    --color-slate-900: #13161E;
+    --color-slate-800: #1F2330;
+    --color-slate-700: #333849;
+    --color-slate-600: #4F566B;
+    --color-slate-500: #7B8296;
+    --color-slate-400: #A5AAB8;
+    --color-slate-300: #DCE0EB;
+    --color-slate-200: #F0F2F7;
+    --color-slate-100: #FFFFFF;
+
+    --brand-200: #FECDD3;
+    --brand-300: #FDA4AF;
+    --brand-400: #F44E6B;
+    --brand-500: #DC143C;
+    --brand-600: #C81E3A;
+    --brand-700: #9F1239;
+    --brand-800: #7A0E2C;
+    --brand-900: #4C091C;
+    --brand-950: #29050F;
+
+    --pearl-bg: #FFFFFF;
+    --pearl-ink: #090A0F;
+    --pearl-border: rgba(255, 255, 255, 0.18);
+    --pearl-soft: rgba(255, 255, 255, 0.08);
+    --pearl-text: #FFFFFF;
+    --fab-bg: #FFFFFF;
+    --fab-ink: #090A0F;
+    --fab-ring: rgba(220, 20, 60, 0.72);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--app-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    overscroll-behavior-y: none;
+  }
+
+  input, textarea, select {
+    user-select: text;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 161, 176, 0.28);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 161, 176, 0.45);
+}
+
+/* Safe area padding for mobile shells / notch / navigation bars */
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+

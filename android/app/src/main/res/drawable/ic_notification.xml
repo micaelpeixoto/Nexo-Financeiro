@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Emblema geométrico Nexo Financeiro (monocromático branco para tint Carmim no Android) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M4,4 L8.4,4 L8.4,20 L4,20 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15.6,4 L20,4 L20,20 L15.6,20 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M4,4 L8.6,4 L20,20 L15.4,20 Z" />
+</vector>

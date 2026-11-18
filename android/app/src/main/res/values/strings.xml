@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Nexo Financeiro</string>
+    <string name="currency_symbol">R$</string>
+</resources>

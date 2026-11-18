@@ -1,0 +1,6 @@
+{
+  "name": "FINANÇAS - Controle Financeiro Pessoal",
+  "description": "Aplicativo de controle financeiro pessoal, mobile-first, 100% offline, com orçamentos, metas, relatórios, parcelamentos e insights inteligentes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
