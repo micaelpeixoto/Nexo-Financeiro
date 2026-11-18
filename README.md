@@ -34,5 +34,5 @@ node scripts/sync-android-assets.mjs
 ```
 
 ---
-*Licença: [MIT / GPLv3]*  
+*Licença: GPL-3.0  
 *Desenvolvido com o apoio do Google Gemini.*
